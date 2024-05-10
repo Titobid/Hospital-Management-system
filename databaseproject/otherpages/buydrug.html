@@ -1,0 +1,66 @@
+<style>
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .inputs {
+        padding: 5px;
+        border-radius: 50px;
+        outline: none;
+        border: 0.5px solid black;
+    }
+
+    #cpButton {
+
+        width: 150px;
+        height: 30px;
+        border: 0.5px solid black;
+        outline: none;
+        border-radius: 10px;
+    }
+
+    #cpButton:hover {
+        cursor: pointer;
+        background: whitesmoke;
+        font-weight: bold;
+    }
+</style>
+
+
+<h1>Drug orders</h1>
+<form name="drugorder" method="post" action="<?php $PHP_SELF ?>">
+    
+    <br><br>
+    <h4>Dose in the prescription</h4> <br>
+    <select class="inputs" id="buydrug" type="number" name="buydose" required>
+        <option value="10">10mg</option>
+        <option value="20">20mg</option>
+        <option value="30">30mg</option>
+        <option value="50">50mg</option>
+        <option value="60">60mg</option>
+        <option value="70">70mg</option>
+        <option value="90">90mg</option>
+        <option value="100">100mg</option>
+    </select> <br><br>
+    <h4>Drug Name in the prescription</h4><br>
+    <select class="inputs"  type="text" name="buydrug" required>
+        <option value="Drug1">Drug1</option>
+        <option value="Drug2">Drug2</option>
+        <option value="Drug3">Drug3</option>
+        <option value="Drug4">Drug4</option>
+        <option value="Drug5">Drug5</option>
+        <option value="Drug6">Drug6</option>
+        <option value="Drug7">Drug7</option>
+        <option value="Drug8">Drug8</option>
+    </select> <br><br>
+    
+
+    <input type="submit" value="Buy Drugs" id="cpButton" name="buybutton">
+</form>

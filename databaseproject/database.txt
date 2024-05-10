@@ -1,0 +1,6 @@
+database password: pre123scriptions
+doctors : username doc1  pw: doc123
+patients: username pt1 	pw:pt123
+
+sql code
+prescribe.date, prescribe.dose, prescribe.dname FROM prescribe WHERE prescribe.username='pt1';
